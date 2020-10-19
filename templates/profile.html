@@ -1,0 +1,33 @@
+﻿{% extends "layout.html" %}
+{% block content %}
+<div class="home_pg">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-6 borders">
+                <div class="card borders" style="width: 20rem;">
+                    <!--<img class="card-img-top" src="PASS PORT.jpg" alt="Img govinda">-->
+                    <iframe src="https://drive.google.com/file/d/1IzJk4vFrkj1EhdYqH6W_3JBoJRHmFABH/preview" width="300" height="390"></iframe>
+                    <div class="card-body">
+                        <h4 class="card-title"> Who am I ? </h4>
+                        <p class="card-text">
+                            <b>I'm Abheshekh Akula.</b><br> I aspire to become a Revolutionary Scientist.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col">
+                <h2>List of Elements </h2>
+                <ul style="list-style: none;">
+                    <!--<li class="borders"> <a href="index1.html"> <h3> HOO</h3></a></li>-->
+                    <!--<li class="borders"> <a href="{{ url_for('home') }}"> <h3> Home </h3> </a> </li>-->
+                    <!--<li class="borders"> <h3> C3 </h3> </li>
+    <li class="borders"> <h3> C4 </h3> </li>-->
+                    {{list | safe}}
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

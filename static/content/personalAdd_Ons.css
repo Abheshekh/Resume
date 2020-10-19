@@ -1,0 +1,79 @@
+﻿.hide
+{
+    display:none;
+}
+
+.other_page{
+    background-color: slategrey;
+}
+
+.home_pg .row {
+    color: white;
+    border: 3px solid;
+    margin: 1.5em;
+}
+
+.home_pg .mycard {
+    align-items: center;
+}
+
+.home_pg .col{
+    color: red;
+    border: 3px dotted;
+    margin: 1em;   
+}
+
+.mc{
+    margin:3px;
+}
+
+.home_pg {
+    text-align: center;
+}
+
+    .home_pg .borders {
+        color: red;
+        border: 3px dashed;
+        margin: 10px;
+        background-color: white;
+        align-items: center;
+    }
+
+.home_pg h2 {
+    background-color: #99ccff;
+}
+
+.home {
+    background: url(https://c4.wallpaperflare.com/wallpaper/513/292/11/sketches-gradient-doodle-logo-wallpaper-preview.jpg);
+    background-repeat: contain;
+}
+
+table {
+    margin: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+tr {
+    border: 2px solid red;
+    margin: 20%;
+}
+
+td {
+    border: 2px dashed orange;
+    padding: 8px;
+}
+
+th {
+    border: 2px solid blue;
+    margin: 5%;
+}
+
+body {
+    background-color: #ffb3b3;
+    border: 5px solid black;
+}
+
+.fa {
+    color: red !important;
+}
