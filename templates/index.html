@@ -1,52 +1,33 @@
-<!--
-
-<div class="container">
-    <div class="row whole_view">
-        <div class="column">
-            <div class="row"><img src="https://m.media-amazon.com/images/M/MV5BMTM0ODU5Nzk2OV5BMl5BanBnXkFtZTcwMzI2ODgyNQ@@._V1_UY317_CR4,0,214,317_AL_.jpg" alt="Img govinda"></div>
-            <div class="row"> <label> ME </label> </div>
-            <div class="row"> <label> My Father </label> </div>
-            <div class="row"> <label> My Mother </label> </div>
-        </div>
-        <div class="column data">
-            <ul>
-                <li><a href="{{ url_for('about') }}">Projects</a></li>
-                <li><a href="{{ url_for('home') }}">Internships</a></li>
-                <li><a href="{{ url_for('contact') }}">Qualification</a></li>
-            </ul>
-        </div>
-    </div>
-</div>-->
-<!--<div class="jumbotron">
-    <h1>Flask</h1>
-    <p class="lead">Flask is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="http://flask.pocoo.org/" class="btn btn-primary btn-large">Learn more &raquo;</a></p>
-</div>
-
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            Flask gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="http://flask.pocoo.org/docs/">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>The Python Package Index is a repository of software for the Python programming language.</p>
-        <p><a class="btn btn-default" href="https://pypi.python.org/pypi">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Microsoft Azure</h2>
-        <p>You can easily publish to Microsoft Azure using Visual Studio. Find out how you can host your application using a free trial today.</p>
-        <p><a class="btn btn-default" href="http://azure.microsoft.com">Learn more &raquo;</a></p>
-    </div>
-</div>-->
-
 {% extends "layout.html" %}
-
 {% block content %}
+<div class="home_pg">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-6 borders">
+                <div class="card borders" style="width: 20rem;">
+                    <!--<img class="card-img-top" src="PASS PORT.jpg" alt="Img govinda">-->
+                    <iframe src="https://drive.google.com/file/d/1IzJk4vFrkj1EhdYqH6W_3JBoJRHmFABH/preview" width="300" height="390"></iframe>
+                    <div class="card-body">
+                        <h4 class="card-title"> Who am I ? </h4>
+                        <p class="card-text">
+                            <b>I'm Abheshekh Akula.</b><br> I aspire to become a Revolutionary Scientist.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col">
+                <h2>List of Elements </h2>
+                <ul style="list-style: none;">
+                    <!--<li class="borders"> <a href="index1.html"> <h3> HOO</h3></a></li>-->
+                    <!--<li class="borders"> <a href="{{ url_for('home') }}"> <h3> Home </h3> </a> </li>-->
+                    <!--<li class="borders"> <h3> C3 </h3> </li>
+                    <li class="borders"> <h3> C4 </h3> </li>-->
+                    {{list | safe}}
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
 
 {% endblock %}

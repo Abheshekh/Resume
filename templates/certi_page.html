@@ -1,0 +1,55 @@
+﻿{% extends "layout.html" %}
+{% block content %}
+
+<div class="certi_config">
+    <div class="container">
+        <div class="row row_c">
+            <div class="col-xs-3 col_b">
+                <h3>C1</h3>
+            </div>
+            <div class="col-xs-3 col_b">
+                <h3>C1</h3>
+            </div>
+            <div class="col-xs-3 col_b">
+                <h3>C1</h3>
+            </div>
+        </div>
+        <div class="row row_c">
+            <div class="overlay" id="test">
+                <div class="container">
+                    <input type="radio" name="images" id="i1" checked>
+                    <input type="radio" name="images" id="i2">
+                    <input type="radio" name="images" id="i3">
+
+                    <div class="slide_img" id="one">
+                        <iframe src="https://drive.google.com/file/d/1Mm9_Y32NI4zJGJwH0stSkT52GMd30HDZ/preview"></iframe>
+                        <!-- <img src="https://i.ytimg.com/vi/KTwkTJJeIVM/maxresdefault.jpg" alt="1"> -->
+                        <label for="i3" class="pre"></label>
+                        <label for="i2" class="nxt"></label>
+                    </div>
+
+                    <div class="slide_img" id="two">
+                        <iframe src="https://drive.google.com/file/d/1aLVa5TG-deeJf7eqFMuIUsU_gtSCF04A/preview"></iframe>
+                        <!-- <img src="https://i.ytimg.com/vi/mz4Stu9k4CE/hqdefault.jpg" alt="2"> -->
+                        <label for="i1" class="pre"></label>
+                        <label for="i3" class="nxt"></label>
+                    </div>
+
+                    <div class="slide_img" id="three">
+                        <iframe src="https://drive.google.com/file/d/1Vnt_XJ3nrvhiaDol97SItGkQI0rmyPOq/preview"></iframe>
+                        <!-- <img src="https://i.ytimg.com/vi/Q5myhlkiumM/hqdefault.jpg" alt="3"> -->
+                        <label for="i2" class="pre"></label>
+                        <label for="i1" class="nxt"></label>
+                    </div>
+
+                    <div class="navs">
+                        <label class="dots" id="dot1" for="i1"></label>
+                        <label class="dots" id="dot2" for="i2"></label>
+                        <label class="dots" id="dot3" for="i3"></label>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
